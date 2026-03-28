@@ -1,0 +1,13 @@
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks.c:86:13:MCboot	2
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks.c:251:13:TSK_SetChargeBootCapDelayM1	1
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks.c:262:13:TSK_ChargeBootCapDelayHasElapsedM1	1
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks.c:278:13:TSK_SetStopPermanencyTimeM1	1
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks.c:289:13:TSK_StopPermanencyTimeHasElapsedM1	1
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks.c:315:16:TSK_HighFrequencyTask	2
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks.c:370:13:TSK_SafetyTask_PWMOFF	4
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks.c:435:13:TSK_SafetyTask_LSON	15
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks.c:347:13:TSK_SafetyTask	2
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks.c:164:13:MC_RunMotorControlTasks	7
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks.c:572:13:TSK_HardwareFaultTask	1
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks.c:585:13:UI_HandleStartStopButton_cb	2
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks.c:603:13:mc_lock_pins	1

@@ -1,0 +1,5 @@
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/sync_registers.c:33:9:RI_SetRegisterGlobal	17
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/sync_registers.c:167:9:RI_SetRegisterMotor1	82
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/sync_registers.c:581:9:RI_GetRegisterGlobal	20
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/sync_registers.c:726:11:RI_GetRegisterMotor1	102
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/sync_registers.c:1290:9:RI_MovString	4

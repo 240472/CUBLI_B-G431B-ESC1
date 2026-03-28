@@ -1,0 +1,7 @@
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:439:13:FOC_Clear	1
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:80:13:FOC_Init	1
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:155:6:TSK_MF_StopProcessing	1
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:473:13:FOC_InitAdditionalMethods	1
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:496:13:FOC_CalcCurrRef	2
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:174:13:TSK_MediumFrequencyTaskM1	28
+C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:551:16:FOC_HighFrequencyTask	7
