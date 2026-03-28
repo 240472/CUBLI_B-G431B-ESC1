@@ -167,11 +167,12 @@ int main(void)
 	{
 		wheel_speed = MC_GetAverageMecSpeedMotor1_F();
 		CAN_SendFrame(&hfdcan1, (uint8_t*)(&wheel_speed), FDCAN_DLC_BYTES_4, 0x104);
+		measedCurrents = MC_GetIqdMotor1_F();
+		CAN_SendFrame(&hfdcan1, (uint8_t*)(&measedCurrents.q), FDCAN_DLC_BYTES_4, 0x105);
 		send_speed = 0;
 	}
 
-	measedCurrents = MC_GetIqdMotor1_F();
-	CAN_SendFrame(&hfdcan1, (uint8_t*)(&measedCurrents.q), FDCAN_DLC_BYTES_4, 0x105);
+
 
 	/*HAL_Delay(500);
 	CAN_SendFrame(&hfdcan1, data, FDCAN_DLC_BYTES_8, 0x7F4);
