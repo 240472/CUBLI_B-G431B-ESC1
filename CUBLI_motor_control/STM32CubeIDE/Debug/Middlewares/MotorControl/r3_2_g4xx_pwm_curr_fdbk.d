@@ -1,5 +1,5 @@
 Middlewares/MotorControl/r3_2_g4xx_pwm_curr_fdbk.o: \
- C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/G4xx/Src/r3_2_g4xx_pwm_curr_fdbk.c \
+ C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/G4xx/Src/r3_2_g4xx_pwm_curr_fdbk.c \
  ../../MCSDK_v6.4.1-Full/MotorControl/MCSDK/MCLib/G4xx/Inc/r3_2_g4xx_pwm_curr_fdbk.h \
  ../../Inc/pwm_curr_fdbk.h ../../Inc/mc_type.h ../../Inc/mc_stm_types.h \
  ../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h \

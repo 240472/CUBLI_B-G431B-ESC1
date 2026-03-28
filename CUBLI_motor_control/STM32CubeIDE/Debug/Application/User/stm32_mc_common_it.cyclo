@@ -1,5 +1,5 @@
-C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/stm32_mc_common_it.c:70:6:TIM4_IRQHandler	3
-C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/stm32_mc_common_it.c:109:6:USART2_IRQHandler	14
-C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/stm32_mc_common_it.c:187:6:HardFault_Handler	1
-C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/stm32_mc_common_it.c:206:6:SysTick_Handler	3
-C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/stm32_mc_common_it.c:252:6:EXTI15_10_IRQHandler	2
+C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/stm32_mc_common_it.c:70:6:TIM4_IRQHandler	3
+C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/stm32_mc_common_it.c:109:6:USART2_IRQHandler	14
+C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/stm32_mc_common_it.c:187:6:HardFault_Handler	1
+C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/stm32_mc_common_it.c:206:6:SysTick_Handler	3
+C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/stm32_mc_common_it.c:252:6:EXTI15_10_IRQHandler	2

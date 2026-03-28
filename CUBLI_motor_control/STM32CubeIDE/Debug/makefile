@@ -62,8 +62,8 @@ all: main-build
 main-build: CUBLI_motor_control.elf secondary-outputs
 
 # Tool invocations
-CUBLI_motor_control.elf CUBLI_motor_control.map: $(OBJS) $(USER_OBJS) C:\Users\dozav\Desktop\CUBLI_v7\B-G431B-ESC1\CUBLI_motor_control\STM32CubeIDE\STM32G431CBUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "CUBLI_motor_control.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\dozav\Desktop\CUBLI_v7\B-G431B-ESC1\CUBLI_motor_control\STM32CubeIDE\STM32G431CBUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CUBLI_motor_control.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+CUBLI_motor_control.elf CUBLI_motor_control.map: $(OBJS) $(USER_OBJS) C:\Users\dozav\Documents\GitHub\CUBLI_B-G431B-ESC1\CUBLI_motor_control\STM32CubeIDE\STM32G431CBUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "CUBLI_motor_control.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\dozav\Documents\GitHub\CUBLI_B-G431B-ESC1\CUBLI_motor_control\STM32CubeIDE\STM32G431CBUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CUBLI_motor_control.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

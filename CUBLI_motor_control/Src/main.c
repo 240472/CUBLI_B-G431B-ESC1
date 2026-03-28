@@ -155,6 +155,7 @@ int main(void)
   //uint8_t data2[8] = {0, 0, 0, 0, 0, 0, 0, 0};
   float wheel_speed;
   uint8_t send_speed = 0;
+  qd_f_t measedCurrents;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -168,6 +169,9 @@ int main(void)
 		CAN_SendFrame(&hfdcan1, (uint8_t*)(&wheel_speed), FDCAN_DLC_BYTES_4, 0x104);
 		send_speed = 0;
 	}
+
+	measedCurrents = MC_GetIqdMotor1_F();
+	CAN_SendFrame(&hfdcan1, (uint8_t*)(&measedCurrents.q), FDCAN_DLC_BYTES_4, 0x105);
 
 	/*HAL_Delay(500);
 	CAN_SendFrame(&hfdcan1, data, FDCAN_DLC_BYTES_8, 0x7F4);

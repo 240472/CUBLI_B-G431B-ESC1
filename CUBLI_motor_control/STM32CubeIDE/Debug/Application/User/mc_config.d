@@ -1,5 +1,5 @@
 Application/User/mc_config.o: \
- C:/Users/dozav/Desktop/CUBLI_v7/B-G431B-ESC1/CUBLI_motor_control/Src/mc_config.c \
+ C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/mc_config.c \
  ../../Inc/main.h ../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h \
  ../../Inc/stm32g4xx_hal_conf.h \
  ../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h \
