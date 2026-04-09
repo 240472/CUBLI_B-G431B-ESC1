@@ -31,7 +31,7 @@
 /******** MAIN AND AUXILIARY SPEED/POSITION SENSOR(S) SETTINGS SECTION ********/
 
 /*** Speed measurement settings ***/
-#define MAX_APPLICATION_SPEED_RPM           2000 /*!< rpm, mechanical */
+#define MAX_APPLICATION_SPEED_RPM           5000 /*!< rpm, mechanical */
 #define MIN_APPLICATION_SPEED_RPM           0 /*!< rpm, mechanical, absolute value */
 #define M1_SS_MEAS_ERRORS_BEFORE_FAULTS     3 /*!< Number of speed measurement errors before main sensor goes in fault */
 
@@ -43,17 +43,17 @@
 
 /* State observer scaling factors F1 */
 #define F1                                  16384
-#define F2                                  4096
+#define F2                                  16384
 #define F1_LOG                              LOG2((16384))
-#define F2_LOG                              LOG2((4096))
+#define F2_LOG                              LOG2((16384))
 
 /* State observer constants */
 #define GAIN1                               -22528
-#define GAIN2                               17569
+#define GAIN2                               27030
 
 /* Only in case PLL is used, PLL gains */
-#define PLL_KP_GAIN                         638
-#define PLL_KI_GAIN                         23
+#define PLL_KP_GAIN                         1596
+#define PLL_KI_GAIN                         57
 #define PLL_KPDIV                           16384
 #define PLL_KPDIV_LOG                       LOG2((PLL_KPDIV))
 #define PLL_KIDIV                           65535
@@ -99,7 +99,7 @@
 #define TFDIFFERENTIAL_TERM_ENABLING        DISABLE
 
 #define PID_SPEED_KP_DEFAULT                2310/(SPEED_UNIT/10) /* Workbench compute the gain for 01Hz unit*/
-#define PID_SPEED_KI_DEFAULT                1/(SPEED_UNIT/10) /* Workbench compute the gain for 01Hz unit*/
+#define PID_SPEED_KI_DEFAULT                0/(SPEED_UNIT/10) /* Workbench compute the gain for 01Hz unit*/
 #define PID_SPEED_KD_DEFAULT                0/(SPEED_UNIT/10) /* Workbench compute the gain for 01Hz unit*/
 
 /* Speed control loop */
@@ -121,7 +121,7 @@
 #define IQMAX_A                             2
 
 /* Default settings */
-#define DEFAULT_CONTROL_MODE                MCM_TORQUE_MODE
+#define DEFAULT_CONTROL_MODE                MCM_SPEED_MODE
 #define DEFAULT_TARGET_SPEED_RPM            720
 #define DEFAULT_TARGET_SPEED_UNIT           (DEFAULT_TARGET_SPEED_RPM*SPEED_UNIT/U_RPM)
 #define DEFAULT_TORQUE_COMPONENT_A          0
@@ -173,6 +173,12 @@
 #define ADC_SAMPLING_CYCLES                 (6 + SAMPLING_CYCLE_CORRECTION)
 
 /******************************   ADDITIONAL FEATURES   **********************/
+
+/*  Feed-forward parameters */
+#define FEED_FORWARD_CURRENT_REG_ENABLING ENABLE
+#define M1_CONSTANT1_Q                      108460
+#define M1_CONSTANT1_D                      108460
+#define M1_CONSTANT2_QD                     13431
 
 /*** On the fly start-up ***/
 

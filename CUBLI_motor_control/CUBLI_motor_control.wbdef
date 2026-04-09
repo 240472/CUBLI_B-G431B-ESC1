@@ -89,7 +89,7 @@
         <define key="M1_DAC_CURRENT_THRESHOLD" value="4083" />
         <define key="M1_DBG_OPEN_LOOP_ENABLE" value="FALSE" />
         <define key="M1_DC_CURRENT_RS_MEAS" value="2" />
-        <define key="M1_DEFAULT_CONTROL_MODE" value="STC_TORQUE_MODE" />
+        <define key="M1_DEFAULT_CONTROL_MODE" value="STC_SPEED_MODE" />
         <define key="M1_DEFAULT_FLUX_COMPONENT" value="0" />
         <define key="M1_DEFAULT_TARGET_SPEED_RPM" value="720" />
         <define key="M1_DEFAULT_TORQUE_COMPONENT" value="0" />
@@ -108,8 +108,8 @@
         <define key="M1_ENC_USE_CH3" value="FALSE" />
         <define key="M1_ENCODER_PPR" value="1024" />
         <define key="M1_F1" value="16384" />
-        <define key="M1_F2" value="4096" />
-        <define key="M1_FEED_FORWARD_CURRENT_REG_ENABLING" value="DISABLE" />
+        <define key="M1_F2" value="16384" />
+        <define key="M1_FEED_FORWARD_CURRENT_REG_ENABLING" value="ENABLE" />
         <define key="M1_FINAL_I_ALIGNMENT" value="2" />
         <define key="M1_FLUX_WEAKENING_ENABLING" value="DISABLE" />
         <define key="M1_FW_KI_GAIN" value="5000" />
@@ -118,7 +118,7 @@
         <define key="M1_FW_KPDIV" value="32768" />
         <define key="M1_FW_VOLTAGE_REF" value="985" />
         <define key="M1_GAIN1" value="-22528" />
-        <define key="M1_GAIN2" value="17569" />
+        <define key="M1_GAIN2" value="27030" />
         <define key="M1_HALL_PHASE_SHIFT" value="300" />
         <define key="M1_HALL_SENSORS_PLACEMENT" value="DEGREES_120" />
         <define key="M1_HIGH_SIDE_IDLE_STATE" value="TURN_OFF" />
@@ -134,10 +134,10 @@
         <define key="M1_LOW_SIDE_IDLE_STATE" value="TURN_OFF" />
         <define key="M1_LOW_SIDE_SIGNALS_ENABLING" value="LS_PWM_TIMER" />
         <define key="M1_LS" value="0.00003" />
-        <define key="M1_MAX_APPLICATION_SPEED" value="2000" />
+        <define key="M1_MAX_APPLICATION_SPEED" value="5000" />
         <define key="M1_MAX_MODULATION_INDEX" value="100" />
         <define key="M1_MIN_APPLICATION_SPEED" value="0" />
-        <define key="M1_MOTOR_MAX_SPEED_RPM" value="2000" />
+        <define key="M1_MOTOR_MAX_SPEED_RPM" value="5000" />
         <define key="M1_MOTOR_NAME" value="CUBLI_with_dural_flywhee" />
         <define key="M1_MOTOR_RATED_FLUX" value="0.011241878" />
         <define key="M1_MOTOR_VOLTAGE_CONSTANT" value="2.8" />
@@ -172,13 +172,13 @@
         <define key="M1_PID_FLUX_KI_DEFAULT" value="2114" />
         <define key="M1_PID_FLUX_KP_DEFAULT" value="3170" />
         <define key="M1_PID_SPEED_KD_DEFAULT" value="0" />
-        <define key="M1_PID_SPEED_KI_DEFAULT" value="1" />
+        <define key="M1_PID_SPEED_KI_DEFAULT" value="0" />
         <define key="M1_PID_SPEED_KP_DEFAULT" value="2310" />
         <define key="M1_PID_TORQUE_KD_DEFAULT" value="100" />
         <define key="M1_PID_TORQUE_KI_DEFAULT" value="2114" />
         <define key="M1_PID_TORQUE_KP_DEFAULT" value="3170" />
-        <define key="M1_PLL_KI_GAIN" value="23" />
-        <define key="M1_PLL_KP_GAIN" value="638" />
+        <define key="M1_PLL_KI_GAIN" value="57" />
+        <define key="M1_PLL_KP_GAIN" value="1596" />
         <define key="M1_POLE_PAIR_NUM" value="12" />
         <define key="M1_POSITION_CTRL_ENABLING" value="DISABLE" />
         <define key="M1_POTENTIOMETER_ENABLE" value="FALSE" />
@@ -431,7 +431,7 @@
         <define key="WB_UI_GAINLIST" value="[{'factor':2,'gain':1.142,'pol':0.257125,'maxVRef':3.3},{'factor':4,'gain':2.284,'pol':0.51425,'maxVRef':3.3},{'factor':8,'gain':4.568,'pol':1.0285,'maxVRef':3.3},{'factor':16,'gain':9.136,'pol':2.057,'maxVRef':3.3},{'factor':32,'gain':18.272,'pol':4.114,'maxVRef':3.3},{'factor':64,'gain':36.544,'pol':8.228,'maxVRef':3.3}]" />
         <define key="WB_UI_GON" value="0.571" />
         <define key="WB_UI_GOP" value="16" />
-        <define key="WB_UI_INERTIA" value="17.74" />
+        <define key="WB_UI_INERTIA" value="315" />
         <define key="WB_UI_MAGNETIC_STRUCTURE" value="SM-PMSM" />
         <define key="WB_UI_MAX_CURRENT" value="20" />
         <define key="WB_UI_MAX_NOMINAL_DC_VOLTAGE" value="24" />

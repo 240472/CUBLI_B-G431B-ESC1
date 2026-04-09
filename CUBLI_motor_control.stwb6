@@ -1,5 +1,5 @@
 {
-  "version": 16,
+  "version": 8,
   "algorithm": "FOC",
   "description": "",
   "workBenchVersion": "6.4.1",
@@ -1033,7 +1033,7 @@
       },
       "driveManagement_0": {
         "currentReg": {
-          "controlMode": "torque",
+          "controlMode": "speed",
           "autoPI": true,
           "KpKi": {
             "P": "Number.NaN",
@@ -1041,7 +1041,7 @@
           },
           "cutOffFrequency": "Number.NaN",
           "useMTPA": false,
-          "feedForward": false,
+          "feedForward": true,
           "MTPATarget": "Number.NaN"
         },
         "speedReg": {
@@ -1291,9 +1291,9 @@
         "maxCurrent": "Number.NaN",
         "maxDCVoltage": "Number.NaN",
         "BEmfConstant": "Number.NaN",
-        "inertia": "Number.NaN",
+        "inertia": 315,
         "friction": "Number.NaN",
-        "maxRatedSpeed": "Number.NaN",
+        "maxRatedSpeed": 5000,
         "hasHallSensor": false,
         "hallSensor": {
           "sensorsDisplacement": "Number.NaN",
@@ -1303,7 +1303,9 @@
         "quadratureEncoder": {
           "pulsesPerMechanicalRevolution": 1024,
           "hasIndexPin": true
-        }
+        },
+        "nominalCurrent": "Number.NaN",
+        "nominalDCVoltage": "Number.NaN"
       }
     }
   }

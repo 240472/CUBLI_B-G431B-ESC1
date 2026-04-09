@@ -61,6 +61,7 @@
 "./Middlewares/MotorControl/digital_output.o"
 "./Middlewares/MotorControl/enc_align_ctrl.o"
 "./Middlewares/MotorControl/encoder_speed_pos_fdbk.o"
+"./Middlewares/MotorControl/feed_forward_ctrl.o"
 "./Middlewares/MotorControl/mcpa.o"
 "./Middlewares/MotorControl/ntc_temperature_sensor.o"
 "./Middlewares/MotorControl/open_loop.o"

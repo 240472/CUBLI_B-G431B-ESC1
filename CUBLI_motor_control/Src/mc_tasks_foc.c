@@ -132,6 +132,11 @@ __weak void FOC_Init(void)
     pMPM[M1]->pVBS = &(BusVoltageSensor_M1._Super);
     pMPM[M1]->pFOCVars = &FOCVars[M1];
 
+    /*******************************************************/
+    /*   Feed forward component initialization             */
+    /*******************************************************/
+    FF_Init(pFF[M1],&(BusVoltageSensor_M1._Super),pPIDId[M1],pPIDIq[M1]);
+
     pREMNG[M1] = &RampExtMngrHFParamsM1;
     REMNG_Init(pREMNG[M1]);
 
@@ -141,7 +146,8 @@ __weak void FOC_Init(void)
     FOCVars[M1].Iqdref = STC_GetDefaultIqdref(pSTC[M1]);
     FOCVars[M1].UserIdref = STC_GetDefaultIqdref(pSTC[M1]).d;
 
-    MCI_ExecTorqueRamp(&Mci[M1], STC_GetDefaultIqdref(pSTC[M1]).q, 0);
+    MCI_ExecSpeedRamp(&Mci[M1],
+    STC_GetMecSpeedRefUnitDefault(pSTC[M1]),0); /* First command to STC */
 
     /* USER CODE BEGIN MCboot 2 */
 
@@ -460,6 +466,15 @@ __weak void FOC_Clear(uint8_t bMotor)
 
   PWMC_SwitchOffPWM(pwmcHandle[bMotor]);
 
+  if (NULL == pFF[bMotor])
+  {
+    /* Nothing to do */
+  }
+  else
+  {
+    FF_Clear(pFF[bMotor]);
+  }
+
   /* USER CODE BEGIN FOC_Clear 1 */
 
   /* USER CODE END FOC_Clear 1 */
@@ -478,6 +493,14 @@ __weak void FOC_InitAdditionalMethods(uint8_t bMotor) //cstat !RED-func-no-effec
     }
     else
     {
+      if (NULL == pFF[bMotor])
+      {
+        /* Nothing to do */
+      }
+      else
+      {
+        FF_InitFOCAdditionalMethods(pFF[bMotor]);
+      }
   /* USER CODE BEGIN FOC_InitAdditionalMethods 0 */
 
   /* USER CODE END FOC_InitAdditionalMethods 0 */
@@ -514,6 +537,14 @@ __weak void FOC_CalcCurrRef(uint8_t bMotor)
     FOCVars[bMotor].hTeref = STC_CalcTorqueReference(pSTC[bMotor]);
     IqdTmp.q = FOCVars[bMotor].hTeref;
 
+    if (NULL == pFF[bMotor])
+    {
+      /* Nothing to do */
+    }
+    else
+    {
+      FF_VqdffComputation(pFF[bMotor], IqdTmp, pSTC[bMotor]);
+    }
   }
   else
   {
@@ -637,6 +668,7 @@ inline uint16_t FOC_CurrControllerM1(void)
     Vqd.q = 0;
     Vqd.d = 0;
   }
+  Vqd = FF_VqdConditioning(pFF[M1],Vqd);
   Vqd = Circle_Limitation(&CircleLimitationM1, Vqd);
   Valphabeta = MCM_Rev_Park(Vqd, hElAngle);
 
@@ -657,6 +689,7 @@ inline uint16_t FOC_CurrControllerM1(void)
   FOCVars[M1].Valphabeta = Valphabeta;
   FOCVars[M1].hElAngle = hElAngle;
 
+  FF_DataProcess(pFF[M1]);
   return (hCodeError);
 }
 

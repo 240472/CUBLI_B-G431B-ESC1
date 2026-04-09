@@ -370,6 +370,15 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
         case MC_REG_DAC_USER2:
           break;
 
+        case MC_REG_FF_VQ:
+        case MC_REG_FF_VD:
+        case MC_REG_FF_VQ_PIOUT:
+        case MC_REG_FF_VD_PIOUT:
+        {
+          retVal = MCP_ERROR_RO_REG;
+          break;
+        }
+
         case MC_REG_SPEED_KP_DIV:
         {
           PID_SetKPDivisorPOW2(&PIDSpeedHandle_M1, regdata16);
@@ -469,6 +478,24 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
         case MC_REG_STOPLL_OBS_BEMF:
         {
           retVal = MCP_ERROR_RO_REG;
+          break;
+        }
+
+        case MC_REG_FF_1Q:
+        {
+          FF_M1.wConstant_1Q = (int32_t)regdata32;
+          break;
+        }
+
+        case MC_REG_FF_1D:
+        {
+          FF_M1.wConstant_1D = (int32_t)regdata32;
+          break;
+        }
+
+        case MC_REG_FF_2:
+        {
+          FF_M1.wConstant_2 = (int32_t)regdata32;
           break;
         }
 
@@ -995,6 +1022,30 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
             case MC_REG_DAC_USER2:
               break;
 
+            case MC_REG_FF_VQ:
+            {
+              *regdata16 = FF_GetVqdff(&FF_M1).q;
+              break;
+            }
+
+            case MC_REG_FF_VD:
+            {
+              *regdata16 = FF_GetVqdff(&FF_M1).d;
+              break;
+            }
+
+            case MC_REG_FF_VQ_PIOUT:
+            {
+              *regdata16 = FF_GetVqdAvPIout(&FF_M1).q;
+              break;
+            }
+
+            case MC_REG_FF_VD_PIOUT:
+            {
+              *regdata16 = FF_GetVqdAvPIout(&FF_M1).d;
+              break;
+            }
+
             case MC_REG_SPEED_KP_DIV:
             {
               *regdataU16 = (uint16_t)PID_GetKPDivisorPOW2(&PIDSpeedHandle_M1);
@@ -1110,6 +1161,24 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
             case MC_REG_STOPLL_OBS_BEMF:
             {
               *regdata32 = STO_PLL_GetObservedBemfLevel(&STO_PLL_M1);
+              break;
+            }
+
+            case MC_REG_FF_1Q:
+            {
+              *regdata32 = FF_M1.wConstant_1Q;
+              break;
+            }
+
+            case MC_REG_FF_1D:
+            {
+              *regdata32 = FF_M1.wConstant_1D;
+              break;
+            }
+
+            case MC_REG_FF_2:
+            {
+              *regdata32 = FF_M1.wConstant_2;
               break;
             }
 
