@@ -1292,7 +1292,7 @@
         "maxDCVoltage": "Number.NaN",
         "BEmfConstant": "Number.NaN",
         "inertia": 315,
-        "friction": "Number.NaN",
+        "friction": 50,
         "maxRatedSpeed": 5000,
         "hasHallSensor": false,
         "hallSensor": {
