@@ -68,7 +68,6 @@ MCI_Handle_t *GetMCI(uint8_t bMotor);
 static uint16_t FOC_CurrControllerM1(void);
 
 void TSK_SafetyTask_PWMOFF(uint8_t motor);
-void TSK_SafetyTask_LSON(uint8_t motor);
 
 /* USER CODE BEGIN Private Functions */
 
@@ -146,8 +145,7 @@ __weak void FOC_Init(void)
     FOCVars[M1].Iqdref = STC_GetDefaultIqdref(pSTC[M1]);
     FOCVars[M1].UserIdref = STC_GetDefaultIqdref(pSTC[M1]).d;
 
-    MCI_ExecSpeedRamp(&Mci[M1],
-    STC_GetMecSpeedRefUnitDefault(pSTC[M1]),0); /* First command to STC */
+    MCI_ExecTorqueRamp(&Mci[M1], STC_GetDefaultIqdref(pSTC[M1]).q, 0);
 
     /* USER CODE BEGIN MCboot 2 */
 

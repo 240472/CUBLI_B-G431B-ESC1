@@ -1,7 +1,7 @@
-C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:445:13:FOC_Clear	2
-C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:80:13:FOC_Init	1
-C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:161:6:TSK_MF_StopProcessing	1
-C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:488:13:FOC_InitAdditionalMethods	3
-C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:519:13:FOC_CalcCurrRef	3
-C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:180:13:TSK_MediumFrequencyTaskM1	28
-C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:582:16:FOC_HighFrequencyTask	7
+C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:443:13:FOC_Clear	2
+C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:79:13:FOC_Init	1
+C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:159:6:TSK_MF_StopProcessing	1
+C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:486:13:FOC_InitAdditionalMethods	3
+C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:517:13:FOC_CalcCurrRef	3
+C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:178:13:TSK_MediumFrequencyTaskM1	28
+C:/Users/dozav/Documents/GitHub/CUBLI_B-G431B-ESC1/CUBLI_motor_control/Src/mc_tasks_foc.c:580:16:FOC_HighFrequencyTask	7

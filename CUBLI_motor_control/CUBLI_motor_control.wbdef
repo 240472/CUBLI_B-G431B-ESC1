@@ -89,7 +89,7 @@
         <define key="M1_DAC_CURRENT_THRESHOLD" value="4083" />
         <define key="M1_DBG_OPEN_LOOP_ENABLE" value="FALSE" />
         <define key="M1_DC_CURRENT_RS_MEAS" value="2" />
-        <define key="M1_DEFAULT_CONTROL_MODE" value="STC_SPEED_MODE" />
+        <define key="M1_DEFAULT_CONTROL_MODE" value="STC_TORQUE_MODE" />
         <define key="M1_DEFAULT_FLUX_COMPONENT" value="0" />
         <define key="M1_DEFAULT_TARGET_SPEED_RPM" value="720" />
         <define key="M1_DEFAULT_TORQUE_COMPONENT" value="0" />
@@ -160,7 +160,7 @@
         <define key="M1_OCP_DESTINATION" value="TIM_BKIN" />
         <define key="M1_OCP_TOPOLOGY" value="EMBEDDED" />
         <define key="M1_OFST" value="{0,0,0,0,0,0,0,0}" />
-        <define key="M1_ON_OVER_VOLTAGE" value="TURN_ON_LOW_SIDES" />
+        <define key="M1_ON_OVER_VOLTAGE" value="TURN_OFF_PWM" />
         <define key="M1_OV_TEMPERATURE_HYSTERESIS_C" value="10" />
         <define key="M1_OV_TEMPERATURE_PROT_ENABLING" value="ENABLE" />
         <define key="M1_OV_TEMPERATURE_THRESHOLD_C" value="70" />
@@ -172,8 +172,8 @@
         <define key="M1_PID_FLUX_KI_DEFAULT" value="2114" />
         <define key="M1_PID_FLUX_KP_DEFAULT" value="3170" />
         <define key="M1_PID_SPEED_KD_DEFAULT" value="0" />
-        <define key="M1_PID_SPEED_KI_DEFAULT" value="249" />
-        <define key="M1_PID_SPEED_KP_DEFAULT" value="3058" />
+        <define key="M1_PID_SPEED_KI_DEFAULT" value="487" />
+        <define key="M1_PID_SPEED_KP_DEFAULT" value="2141" />
         <define key="M1_PID_TORQUE_KD_DEFAULT" value="100" />
         <define key="M1_PID_TORQUE_KI_DEFAULT" value="2114" />
         <define key="M1_PID_TORQUE_KP_DEFAULT" value="3170" />
@@ -197,7 +197,7 @@
         <define key="M1_SHARED_SIGNAL_ENABLE" value="FALSE" />
         <define key="M1_SP_KDDIV" value="16" />
         <define key="M1_SP_KIDIV" value="16384" />
-        <define key="M1_SP_KPDIV" value="32" />
+        <define key="M1_SP_KPDIV" value="16" />
         <define key="M1_SPD_DIFFERENTIAL_TERM_ENABLING" value="DISABLE" />
         <define key="M1_SPEED_LOOP_FREQUENCY_HZ" value="1000" />
         <define key="M1_SPEED_SENSOR" value="QUAD_ENCODER" />
@@ -304,7 +304,7 @@
         <define key="OCPC_OUTPUT_MODE" value="INT_MODE" />
         <define key="OCPC_OUTPUTPOL" value="COMP_OutputPol_NonInverted" />
         <define key="OCPC_SELECTION" value="COMP_Selection_COMP4" />
-        <define key="ON_OVER_VOLTAGE" value="TURN_ON_LOW_SIDES" />
+        <define key="ON_OVER_VOLTAGE" value="TURN_OFF_PWM" />
         <define key="OPAMP1_INVERTINGINPUT" value="OPAMP1_InvertingInput_PA3" />
         <define key="OPAMP1_INVERTINGINPUT_GPIO_PIN" value="GPIO_Pin_3" />
         <define key="OPAMP1_INVERTINGINPUT_GPIO_PORT" value="GPIOA" />
@@ -426,7 +426,7 @@
         <define key="WB_UI_CUTOFF_FREQUENCY" value="6000" />
         <define key="WB_UI_ENCODER_HAS_INDEX_PIN" value="TRUE" />
         <define key="WB_UI_FLUX_TARGET" value="0" />
-        <define key="WB_UI_FRICTION" value="50" />
+        <define key="WB_UI_FRICTION" value="70" />
         <define key="WB_UI_GAIN" value="9.136" />
         <define key="WB_UI_GAINLIST" value="[{'factor':2,'gain':1.142,'pol':0.257125,'maxVRef':3.3},{'factor':4,'gain':2.284,'pol':0.51425,'maxVRef':3.3},{'factor':8,'gain':4.568,'pol':1.0285,'maxVRef':3.3},{'factor':16,'gain':9.136,'pol':2.057,'maxVRef':3.3},{'factor':32,'gain':18.272,'pol':4.114,'maxVRef':3.3},{'factor':64,'gain':36.544,'pol':8.228,'maxVRef':3.3}]" />
         <define key="WB_UI_GON" value="0.571" />
