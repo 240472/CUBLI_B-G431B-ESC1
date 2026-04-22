@@ -1128,8 +1128,8 @@
         }
       },
       "powerSupply_0": {
-        "nominalDcBusVoltage": 14,
-        "nominalCurrent": 2,
+        "nominalDcBusVoltage": 14.4,
+        "nominalCurrent": 4.5,
         "maxCurrent_pk": "Number.NaN",
         "icl": {
           "enable": false,
@@ -1292,7 +1292,7 @@
         "maxDCVoltage": "Number.NaN",
         "BEmfConstant": "Number.NaN",
         "inertia": 315,
-        "friction": 70,
+        "friction": 20,
         "maxRatedSpeed": 5000,
         "hasHallSensor": false,
         "hallSensor": {

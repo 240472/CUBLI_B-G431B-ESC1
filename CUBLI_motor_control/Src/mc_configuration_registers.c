@@ -44,7 +44,7 @@ static const ApplicationConfig_reg_t M1_ApplicationConfig_reg =
 {
   .maxMechanicalSpeed = 5000,
   .maxReadableCurrent = M1_MAX_READABLE_CURRENT,
-  .nominalCurrent     = 2,
+  .nominalCurrent     = 4.5,
   .nominalVoltage     = 14,
   .driveType          = DRIVE_TYPE_M1,
 };
@@ -57,7 +57,7 @@ static const MotorConfig_reg_t M1_MotorConfig_reg =
   .rs         = 0.1,
   .ls         = 0.00003*1.000,
   .ld         = 0.00003,
-  .maxCurrent = 2,
+  .maxCurrent = 4.5,
   .name = "CUBLI_with_dural_flywhee"
 };
 
